@@ -4,11 +4,12 @@ import (
 	"crypto/hmac"
 	"crypto/sha256"
 	"encoding/hex"
-	"fmt"
-	"github.com/google/uuid"
-	"io/ioutil"
+	"errors"
+	"io"
 	"net/http"
 	"strings"
+
+	"github.com/google/uuid"
 )
 
 // Hash your clear password using the way majsoul uses.
@@ -39,13 +40,13 @@ func (a *MajsoulAPI) SendRegisterCode(email string) error {
 	}
 
 	if body != "{}" {
-		return fmt.Errorf(string(body))
+		return errors.New(body)
 	}
 	return nil
 }
 
 func readResponse(resp *http.Response) (string, error) {
-	body, err := ioutil.ReadAll(resp.Body)
+	body, err := io.ReadAll(resp.Body)
 	if err != nil {
 		return "", err
 	}

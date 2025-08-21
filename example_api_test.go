@@ -2,12 +2,13 @@ package majsoul_api
 
 import (
 	"fmt"
-	"github.com/Yesterday17/majsoul_api/lq"
 	"time"
+
+	"github.com/areyzp/MajsoulApiGo/lq"
 )
 
 func Example() {
-	api, err := NewMajsoulAPI(MajsoulCN)
+	api, err := NewMajsoulAPI(MajsoulEN)
 	if err != nil {
 		fmt.Println(err)
 	}

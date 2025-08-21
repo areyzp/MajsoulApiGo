@@ -1,1 +1,3 @@
-# majsoul_api [![GoDoc](https://godoc.org/github.com/Yesterday17/majsoul_api?status.svg)](https://godoc.org/github.com/Yesterday17/majsoul_api)
+Mahjong Soul API wrapper in Go
+
+Generated from a sniffed proto3

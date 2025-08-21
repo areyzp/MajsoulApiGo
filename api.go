@@ -8,8 +8,8 @@ import (
 )
 
 const (
-	ApiVersion          = "0.6.58.w"
-	LatestTestedVersion = "0.6.73.w"
+	ApiVersion          = "0.11.165.w"
+	LatestTestedVersion = "0.11.165.w"
 
 	MajsoulCN = "www.majsoul.com/1"
 	MajsoulJP = "game.mahjongsoul.com"

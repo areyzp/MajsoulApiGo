@@ -1,7 +1,7 @@
 package majsoul_api
 
 import (
-	"github.com/Yesterday17/majsoul_api/lq"
+	"github.com/areyzp/MajsoulApiGo/lq"
 	"github.com/gogo/protobuf/proto"
 )
 

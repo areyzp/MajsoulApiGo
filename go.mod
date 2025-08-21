@@ -1,6 +1,6 @@
-module github.com/Yesterday17/majsoul_api
+module github.com/areyzp/MajsoulApiGo
 
-go 1.12
+go 1.24
 
 require (
 	github.com/gogo/protobuf v1.3.0

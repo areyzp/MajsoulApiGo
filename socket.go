@@ -4,7 +4,8 @@ import (
 	"bytes"
 	"context"
 	"fmt"
-	"github.com/Yesterday17/majsoul_api/lq"
+
+	"github.com/areyzp/MajsoulApiGo/lq"
 	"nhooyr.io/websocket"
 )
 
@@ -41,7 +42,6 @@ func (s *socketClient) Listen() {
 		_, p, err := s.conn.Read(context.Background())
 		if err != nil {
 			panic(err)
-			return
 		}
 
 		var index = p[1] + p[2]<<8
